@@ -25,7 +25,7 @@ class AccountMove(models.Model):
                     line.price_total,
                     line.display_type,
                 ]
-            elif not line.product_id and line.display_type == 'line_section':
+            elif not line.product_id and line.display_type in ['line_section', 'line_note'] :
                 lines_dict[line.name] = [
                     '',
                     line.name,
