@@ -13,7 +13,7 @@ class AccountMove(models.Model):
         for line in invoice_lines:
             if line.product_id.id not in lines_dict:
                 lines_dict[line.product_id.id] = [
-                    line.display_type,
+                    line.product_id.unspsc_code_id.code if line.product_id.unspsc_code_id else '',
                     line.name,
                     line.quantity,
                     line.product_uom_id.name,
@@ -23,13 +23,21 @@ class AccountMove(models.Model):
                     line.tax_ids,
                     line.price_subtotal,
                     line.price_total,
-                    line.product_id.unspsc_code_id.code if line.product_id.unspsc_code_id else '',
-
+                    line.display_type,
                 ]
             elif not line.product_id and line.display_type == 'line_section':
                 lines_dict[line.name] = [
+                    '',
+                    line.name,
+                    line.quantity,
+                    '',
+                    line.price_unit,
+                    '',
+                    line.discount,
+                    line.tax_ids,
+                    line.price_subtotal,
+                    line.price_total,
                     line.display_type,
-                    line.name
                 ]
             else:
                 lines_dict[line.product_id.id][2] += line.quantity
