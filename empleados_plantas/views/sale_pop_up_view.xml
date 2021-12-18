@@ -1,0 +1,48 @@
+<odoo>
+	<data>
+
+		<record id="view_pop_up_wizard_form" model="ir.ui.view">
+			<field name="name">sale.order.popup.form</field>
+			<field name="model">sale.order.popup</field>
+			<field name="arch" type="xml">
+				<form string="Pop Up">
+					<p>
+						<span style="font-size: 16px;">
+							Los pedidos seleccionados serán marcados como Facturado y se le actualizara el numero de factura <br/>
+						</span>
+					</p>
+					<group>
+						<field name="invoice_number"/>
+					</group>
+					<footer>
+						<button class="oe_highlight"
+						        type="object"
+						        name="update_sale_order"
+						        string="Actualizar Pedidos"
+						/>
+						or
+						<button string="Cancel" class="oe_link" special="cancel"/>
+					</footer>
+				</form>
+			</field>
+		</record>
+
+		<record id="pop_up_action" model="ir.actions.act_window">
+			<field name="name">Actualizar Estado Pedido</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">sale.order.popup</field>
+			<field name="view_mode">form</field>
+			<field name="target">new</field>
+		</record>
+
+		<act_window
+				id="pop_up"
+				name="Actualizar Estado Pedido"
+				res_model="sale.order.popup"
+				binding_model="sale.order"
+				view_id="view_pop_up_wizard_form"
+				target="new"
+		/>
+
+	</data>
+</odoo>
