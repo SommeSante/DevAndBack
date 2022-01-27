@@ -2,6 +2,9 @@
 
 from odoo import models, api
 import datetime
+import logging
+
+_logger = logging.getLogger(__name__)
 
 
 class BitacoraConsultas(models.Model):
@@ -10,7 +13,7 @@ class BitacoraConsultas(models.Model):
     
     @api.onchange('x_studio_fecha_y_hora_de_salida')
     def onchange_x_studio_fecha_y_hora_de_salida(self):
-        print (self.x_studio_fecha_y_hora_de_salida, "=========================")
+        _logger.info('Executing method -------------------------------------- %s' % self.x_studio_fecha_y_hora_de_salida)
         if self.x_studio_fecha_y_hora_de_salida:
             time_diff = self.x_studio_fecha_y_hora_de_salida - self.x_studio_fecha_y_hora_de_ingreso
             self.x_studio_tiempo_total_en_consulta = float(time_diff.days) * 24 + (float(time_diff.seconds) / 3600)
