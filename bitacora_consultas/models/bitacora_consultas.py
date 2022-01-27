@@ -10,6 +10,11 @@ _logger = logging.getLogger(__name__)
 class BitacoraConsultas(models.Model):
     _inherit = "x_bitacora_consultas"
     
+    def write(self, vals):
+        _logger.info('Executing method -----------------dd--------------------- %s' % vals)
+        return super(BitacoraConsultas, self).write(vals)
+        
+    
     
     @api.onchange('x_studio_fecha_y_hora_de_salida')
     def onchange_x_studio_fecha_y_hora_de_salida(self):
