@@ -7,12 +7,12 @@ import logging
 _logger = logging.getLogger(__name__)
 
 
-class BitacoraConsultas(models.Model):
+class x_bitacora_consultas(models.Model):
     _inherit = "x_bitacora_consultas"
     
     def write(self, vals):
         _logger.info('Executing method -----------------dd--------------------- %s' % vals)
-        return super(BitacoraConsultas, self).write(vals)
+        return super(x_bitacora_consultas, self).write(vals)
         
     
     
@@ -24,7 +24,7 @@ class BitacoraConsultas(models.Model):
             self.x_studio_tiempo_total_en_consulta = float(time_diff.days) * 24 + (float(time_diff.seconds) / 3600)
 
 
-class BitacoraIncapacidad(models.Model):
+class x_bitacora_incapacidad(models.Model):
     _inherit = "x_bitacora_incapacidad"
     
     @api.onchange('x_studio_das_otorgados')
