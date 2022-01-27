@@ -10,9 +10,9 @@ _logger = logging.getLogger(__name__)
 class x_bitacora_consultas(models.Model):
     _inherit = "x_bitacora_consultas"
     
-    def write(self, vals):
-        _logger.info('Executing method -----------------dd--------------------- %s' % vals)
-        return super(x_bitacora_consultas, self).write(vals)
+    # def write(self, vals):
+    #     _logger.info('Executing method -----------------dd--------------------- %s' % vals)
+    #     return super(x_bitacora_consultas, self).write(vals)
         
     
     
