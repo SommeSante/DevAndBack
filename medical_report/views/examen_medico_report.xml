@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_medical_document">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <div class="oe_structure"/>
+                <h6>
+                    <center>
+                        <b>
+                            <span style="color:#0569af">EXAMEN MÉDICO</span>
+                        </b>
+                    </center>
+                </h6>
+                <center>
+                    <b>
+                        <span style="color:#4dad30;font-size:12px">
+                            <small>SALUD OCUPACIONAL</small>
+                        </span>
+                    </b>
+                </center>
+
+                <div>
+                    <span style="color:#0569af">
+                        <h6>
+                            <strong>DATOS GENERALES</strong>
+                        </h6>
+                    </span>
+                </div>
+                <div class="row">
+                    <div class="col-6 mb4">
+                        <b>
+                            <span style="font-size:12px">EMPRESA:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_cliente_2"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">NOMBRE:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_many2one_field_r1IDF"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Estado Civil:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_estado_civil"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Domicilio:</span>
+                        </b>
+                        <span style="font-size:12px"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Puesto:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_puesto_1"/>
+                        <b>
+                            <span style="font-size:12px;padding-left:40px;">Tel. Móvil:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_telfono_1"/>
+
+                    </div>
+                    <div class="col-6 mb4">
+                        <b>
+                            <span style="font-size:12px">Fecha y Hora Entrada:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_fecha_y_hora_de_ingreso"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Edad:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_edad"/>
+                        <b>
+                            <span style="font-size:12px;padding-left:20px;">Sexo:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_sexo"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Fecha de Nacimiento:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_fecha_nac"/>
+                    </div>
+                </div>
+                <br/>
+                <div>
+                    <span style="color:#0569af">
+                        <h6>
+                            <strong>I. ANTECEDENTES LABORALES</strong>
+                        </h6>
+                    </span>
+                </div>
+                <div>
+                    <b>
+                        <span style="font-size:12px">Accidentes de Trabajo:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_accidentes_de_trabajo"/>
+                    <br/>
+                    <b>
+                        <span style="font-size:12px">Incapacidades:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_incapacidades"/>
+                    <br/>
+                    <b>
+                        <span style="font-size:12px">Enfermedades Profesionales:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_enfermedades_profesionales"/>
+                    <br/>
+                    <b>
+                        <span style="font-size:12px">Expuesto a:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_expuesto_a_ruidos"/>
+                    <br/>
+                    <b>
+                        <span style="font-size:12px">Equipo de Protección Personal:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_equipo_de_proteccin_personal"/>
+
+                </div>
+                <br/>
+
+                <div>
+                    <span style="color:#0569af">
+                        <h6>
+                            <strong>II. ANTECEDENTES PERSONALES NO PATOLÓGICOS</strong>
+                        </h6>
+                    </span>
+                </div>
+                <div class="row">
+                    <div class="col-4 mb4">
+                        <b>
+                            <span style="font-size:12px">Casa:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_casa"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Inmunizaciones Antitetánica:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_inmunizaciones_antitetnica"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Tabaquismo:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_tabaquismo"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Alcoholismo:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_alcoholismo"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Toxicomanías:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_toxicomanas"/>
+                        <b>
+                            <span style="font-size:12px">Higiene Adecuada:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_higiene_adecuada"/>
+
+                    </div>
+                    <div class="col-4 mb4">
+                        <b>
+                            <span style="font-size:12px">Servicios:</span>
+                        </b>
+                        <span style="font-size:12px"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">COVID-19:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_covid_19"/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Hábitos Alimentícios Adecuados:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_hbitos_alimenticios_adecuados"/>
+
+                    </div>
+                    <div class="col-4 mb4">
+                        <b>
+                            <span style="font-size:12px">Ejercicio:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_ejercicio"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Influenza:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_influenza"/>
+
+                    </div>
+                </div>
+
+                <br/>
+                <div>
+                    <span style="color:#0569af">
+                        <h6>
+                            <strong>III. ANTECEDENTES HEREDO-FAMILIARES</strong>
+                        </h6>
+                    </span>
+                </div>
+                <div class="row">
+                    <div class="col-6 mb4">
+                        <b>
+                            <span style="font-size:12px">Cancer:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_cncer"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Epilepsia:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_epilepsia"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Enf. Reumatológicas:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_enf_reumatolgicas"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Cardiopatías:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_cardiopatas"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Hipertensión Arterial:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_hipertensin_art"/>
+
+                    </div>
+                    <div class="col-6 mb4">
+                        <b>
+                            <span style="font-size:12px">Enf. Neur. o Psic.:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_enf_neur_o_psi"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Nefropatías:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_nefropatas"/>
+                        <b>
+                            <span style="font-size:12px">Diabetes Melitus:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_diabetes_melitus"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Hiper/Hipotiroidismo:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_hiperhipotiroidismo"/>
+                    </div>
+                </div>
+                <br/>
+
+                <div>
+                    <span style="color:#0569af">
+                        <h6>
+                            <strong>IV. ANTECEDENTES PERSONALES PATOLÓGICOS</strong>
+                        </h6>
+                    </span>
+                </div>
+                <div class="row">
+                    <div class="col-4 mb4">
+                        <b>
+                            <span style="font-size:12px">Enfermedades Oftálmicas:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_enf_oftalmicas"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Hiper/Hipotiroidismo:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_hiperhipotiroidismo"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Enf. Vías Respiratorias:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_enf_vas_respiratorias"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Enf. de Transmisión Sexua:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_enf_transmisin_sexual"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Epilepsia:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_epilepsia_1"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Transfusiones:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_transfusiones"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">COVID-19:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_covid_19_1"/>
+
+
+                    </div>
+                    <div class="col-4 mb4">
+                        <b>
+                            <span style="font-size:12px">Cancer:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_cancer"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Alergias:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_alergias"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Enfermedades Renales:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_enf_renales"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Hipertensión Arterial:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_hipertensin_arterial"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Quirúrgicos:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_quirrgicos"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Internamientos Previos:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_internamientos_previos"/>
+                        <br/>
+
+                        <b>
+                            <span style="font-size:12px">Otros:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_otros"/>
+
+
+                    </div>
+                    <div class="col-4 mb4">
+                        <b>
+                            <span style="font-size:12px">Enfermedades Óticas:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_enf_ticas"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Diabetes Melitus:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_diabetes_melitus_1"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Enf. Gastrointestinales:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_enf_gastrointestinales"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Fracturas:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_fracturas"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Hepatitis Viral:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_hepattis_viral"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Cardiopatías:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_cardiopatas_1"/>
+
+                    </div>
+                </div>
+                <div>
+                    <b>
+                        <span style="font-size:12px">Comentarios:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_comentarios_app"/>
+                </div>
+                <p style="page-break-after:always;"></p>
+
+                <div>
+                    <span style="color:#0569af">
+                        <h6>
+                            <strong>V. EXPLORACIÓN FÍSICA</strong>
+                        </h6>
+                    </span>
+                </div>
+                <div>
+                    <b>
+                        <span style="font-size:12px">Estatura:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_estatura_mts_"/>
+                    <b>
+                        <span style="font-size:12px;padding-left:40px;">Peso:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_peso_kgs"/>
+                    <b>
+                        <span style="font-size:12px;padding-left:40px;">F.C.:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_fc_"/>
+                     <b>
+                        <span style="font-size:12px;padding-left:40px;">F.R.:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_fr_"/>
+                    <b>
+                        <span style="font-size:12px;padding-left:40px;">Tensión Arteria:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_tensin_arterial"/>
+                    <b>
+                        <span style="font-size:12px;padding-left:40px;">Saturación:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_saturacin"/>
+                </div>
+                <div>
+                    <b>
+                        <span style="font-size:12px">Temperatura:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_temperatura"/>
+                     <b>
+                        <span style="font-size:12px;padding-left:90px;">I.M.C.:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_imc_"/>
+
+                </div>
+                <div>
+                    <b>
+                        <span style="font-size:12px">Orientado:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_orientacin"/>
+                     <b>
+                        <span style="font-size:12px;padding-left:40px;">Actitud:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_actitud"/>
+
+                </div>
+                <div>
+                    <b>
+                        <span style="font-size:12px">Observaciones:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_observaciones"/>
+                </div>
+                <br/>
+                 <div>
+                    <b>
+                        <span style="font-size:12px">Cabeza:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_cabeza"/>
+                     <b>
+                        <span style="font-size:12px;padding-left:40px;">Comentarios:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_comentarios_cabeza"/>
+
+                </div>
+                <div>
+                    <b>
+                        <span style="font-size:12px">Ojos:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_ojos"/>
+                </div>
+                <div>
+                    <b>
+                        <span style="font-size:12px">Agudeza Visual:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_agudeza_visual"/>
+                </div>
+                <div>
+                    <b>
+                        <span style="font-size:12px">Ishihara:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_ishihara"/>
+                     <b>
+                        <span style="font-size:12px;padding-left:70px;">Reflejos Pupilares:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_reflejos_pupilares"/>
+                </div>
+                 <div>
+                    <b>
+                        <span style="font-size:12px">Movs. Oculares:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_mov_oculares"/>
+                     <b>
+                        <span style="font-size:12px;padding-left:70px;">Fondo de Ojo:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_fondo_de_ojo"/>
+                     <b>
+                        <span style="font-size:12px;padding-left:70px;"> Observaciones:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_observaciones_ojos"/>
+                </div>
+                 <div>
+                    <b>
+                        <span style="font-size:12px">Nariz:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_nariz"/>
+                     <b>
+                        <span style="font-size:12px;padding-left:70px;">Tabique:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_tabique"/>
+                     <b>
+                        <span style="font-size:12px;padding-left:70px;"> Cornetes:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_cornetes"/>
+                </div>
+                <div>
+                    <b>
+                        <span style="font-size:12px">Oídos:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_oidos"/>
+                     <b>
+                        <span style="font-size:12px;padding-left:70px;">Pabellón:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_pabelln"/>
+                     <b>
+                        <span style="font-size:12px;padding-left:70px;"> C.A.E.:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_cae"/>
+                    <b>
+                        <span style="font-size:12px;padding-left:70px;"> Membranas Tempánicas:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_membranas_tempnicas"/>
+                </div>
+                <div>
+                    <b>
+                        <span style="font-size:12px">Faringe:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_faringe"/>
+                     <b>
+                        <span style="font-size:12px;padding-left:70px;">Comentarios:</span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_comentarios_faringe"/>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-4 mb4">
+                        <span style="color:#4dad30">
+                            <strong>Cuello:</strong>
+                        </span>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Pulso Carotideo:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_pulso_carotideo"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Tiroides:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_tiroides"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Tráquea:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_trquea"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Ganglios:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_ganglios"/>
+                        <br/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Comentarios:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_comentarios_cuello"/>
+
+                    </div>
+                    <div class="col-4 mb4">
+                        <span style="color:#4dad30">
+                            <strong>Tórax:</strong>
+                        </span>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Campos Pulmonares:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_campos_pulmonares"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Movs. Respiratorios:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_movs_respiratorios"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Trans. de Voz:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_trans_de_voz"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Percusión:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_percusin"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Ruidos Cardiacos:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_ruidos_cardacos"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Comentarios:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_comentarios_torax"/>
+                        <br/>
+                    </div>
+                    <div class="col-4 mb4">
+                        <span style="color:#4dad30">
+                            <strong>Abdomen:</strong>
+                        </span>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Forma:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_forma"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Palpación:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_palpacin"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Percusión:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_percusin"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Auscultación:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_auscultacin"/>
+                        <br/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Comentarios:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_comentarios_abdomen"/>
+                    </div>
+
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-4 mb4">
+                        <span style="color:#4dad30">
+                            <strong>Miembros Superiores:</strong>
+                        </span>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Simetría:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_selection_field_JGjfi"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Movimientos:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_movimientos"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Pulsos:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_pulsos"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Reflejos Osteotendinosos:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_reflejos_osteotendinosos"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Ganglios:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_ganglios_1"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Comentarios:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_comentarios_ms"/>
+
+                    </div>
+                    <div class="col-4 mb4">
+                        <span style="color:#4dad30">
+                            <strong>Miembros Inferiores:</strong>
+                        </span>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Simetría:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_simetra"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Movimientos:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_movimientos_1"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Pulsos:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_pulsos_1"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Reflejos Osteotendinosos:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_reflejos_osteotendinosos_1"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Ganglios:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_ganglios_2"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Comentarios:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_comentarios_mi"/>
+                        <br/>
+                    </div>
+                    <div class="col-4 mb4">
+                        <span style="color:#4dad30">
+                            <strong>Genitales:</strong>
+                        </span>
+                        <br/>
+
+                        <b>
+                            <span style="font-size:12px">Observaciones:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_observaciones_genitales"/>
+                        <br/>
+                        <br/>
+                        <span style="color:#4dad30">
+                            <strong>Columna:</strong>
+                        </span>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Curvatura:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_curvatura"/>
+                        <br/>
+                        <b>
+                            <span style="font-size:12px">Movilidad:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_movilidad"/>
+                        <br/>
+
+                        <b>
+                            <span style="font-size:12px">Observaciones:</span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_observaciones_columna"/>
+                    </div>
+
+                </div>
+
+                <p style="font-size:11px">La información descrita en esta Historia Clínica Laboral fue proporcionada por
+                    mi persona, no omito ningún dato de lesión o enfermedad pasada o presente. Estoy de
+                    acuerdo con los datos anotados por el médico resultado de la exploración física que se me realizó.
+                    Esta información será manejada confidencial y exclusivamente por
+                    el departamento de medicina ocupacional.
+                </p>
+                <div class="row">
+                    <div class="col-6 mb4">
+                        <b>
+                            <span style="font-size:12px;">
+                                Nombre:
+                            </span>
+                        </b>
+                        <span style="font-size:12px" t-field="doc.x_studio_many2one_field_r1IDF"/>
+                    </div>
+                    <div class="col-6 mb4">
+                        <b>
+                            <span style="font-size:12px;">
+                                Firma:
+                            </span>
+                            <span style="font-size:12px" />
+                        </b>
+                    </div>
+                </div>
+                <div>
+                    <b>
+                        <span style="font-size:12px;">
+                            Observaciones:
+                        </span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_observaciones_generales"/>
+                    <br/>
+                    <b>
+                        <span style="font-size:12px;">
+                            Diagnóstico Clínico:
+                        </span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_diagnstico_clnico"/>
+                    <br/>
+                    <br/>
+                    <b>
+                        <span style="font-size:12px;">
+                            Doctor:
+                        </span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_mdico"/>
+                </div>
+
+                <div>
+                    <b>
+                        <span style="font-size:12px;">
+                            Cédula Profesional:
+                        </span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_ced_profesional"/>
+                    <b>
+                        <span style="font-size:12px;padding-left:30px; " >
+                            SSA:
+                        </span>
+                    </b>
+                    <span style="font-size:12px" t-field="doc.x_studio_mdico.x_studio_ssa"/>
+                </div>
+
+            </div>
+
+        </t>
+    </template>
+
+
+    <template id="report_medical">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="medical_report.report_medical_document"/>
+            </t>
+        </t>
+    </template>
+</odoo>
