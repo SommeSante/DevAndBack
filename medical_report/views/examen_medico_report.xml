@@ -669,8 +669,6 @@
                                 <span style="font-size:12px">Observaciones:</span>
                             </b>
                             <span style="font-size:12px" t-field="st.x_studio_observaciones_y_comentarios_2"/>
-
-
                         </div>
 
                     </div>
