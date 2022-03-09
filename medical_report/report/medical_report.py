@@ -15,15 +15,23 @@ class ReportMedical(models.AbstractModel):
         consult = False
         disability =False
         st_7 = False
+        control = False
+        emp = False
+        cron = False
         for doc in docs:
             consult = self.env['x_bitacora_consultas'].search([('x_studio_many2one_field_8sTvT','=',doc.x_studio_many2one_field_r1IDF.id)])
             print ("---------------------------------------",consult ,  doc)
             disability = self.env['x_bitacora_incapacidad'].search(
                 [('x_studio_nombre', '=', doc.x_studio_many2one_field_r1IDF.id)])
-            print("---------------------------------------", disability, doc)
             st_7 = self.env['x_st_7'].search(
                 [('x_studio_nombre', '=', doc.x_studio_many2one_field_r1IDF.id)])
-            print("----------------------------stt-----------", st_7, doc)
+            control = self.env['x_control_prenatal'].search(
+                [('x_studio_nombre', '=', doc.x_studio_many2one_field_r1IDF.id)])
+            emp = self.env['x_emp'].search(
+                [('x_studio_nombre', '=', doc.x_studio_many2one_field_r1IDF.id)])
+            cron = self.env['x_cronicos'].search(
+                [('x_studio_nombre', '=', doc.x_studio_many2one_field_r1IDF.id)])
+            print("-------------cronnnnnnnnnnn-----", cron, doc)
         return {
             'doc_ids': docs.ids,
             'doc_model': 'x_emi',
@@ -31,6 +39,8 @@ class ReportMedical(models.AbstractModel):
             'docs': docs,
             'consult': consult,
             'disability':disability,
+            'control':control,
+            'emp': emp,
             'st' : st_7,
-
+            'cron':cron,
         }

@@ -372,318 +372,12 @@
                     <span style="font-size:12px" t-field="doc.x_studio_comentarios_app"/>
                 </div>
                 <p style="page-break-after:always;"></p>
+
+                <!-- EXPLORACIÓN FÍSICA-->
                 <div>
                     <span style="color:#0569af">
                         <h6>
-                            <strong>V. Bitácora Consultas</strong>
-                        </h6>
-                    </span>
-                </div>
-                <t t-if="consult">
-                    <div class="row">
-                        <div class="col-6 mb4">
-                            <b>
-                                <span style="font-size:12px">Turno:</span>
-                            </b>
-
-                            <span style="font-size:12px" t-field="consult.x_studio_turno_1"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Fecha y hora de ingreso:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="consult.x_studio_fecha_y_hora_de_ingreso"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Fecha y hora de salida:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="consult.x_studio_fecha_y_hora_de_salida"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Tiempo total en consulta:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="consult.x_studio_tiempo_total_en_consulta"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Tipo consulta:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="consult.x_studio_tipo_consulta_1"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Cantidad:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="consult.x_studio_cantidad"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Personal de salud en turno:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="consult.x_studio_personal_de_salud_en_turno_1"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Observaciones:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="consult.x_studio_observaciones"/>
-
-                        </div>
-                        <div class="col-6 mb4">
-                            <b>
-                                <span style="font-size:12px">Clasificación:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="consult.x_studio_clasificacin_1"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Relación con el trabajo:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="consult.x_studio_relacin_con_el_trabajo"/>
-                            <b>
-                                <span style="font-size:12px">Listado por aparatos y sistemas:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="consult.x_studio_listado_por_aparatos_y_sistemas"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Tratamiento:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="consult.x_studio_tratamiento"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Diagnóstico:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="consult.x_studio_diagnstico"/>
-                        </div>
-                    </div>
-                </t>
-
-                <t t-if="not consult">
-                    <span style="font-size:13px">
-                        <b>Sin datos</b>
-                    </span>
-                </t>
-                <br/>
-
-                <div>
-                    <span style="color:#0569af">
-                        <h6>
-                            <strong>VI. Bitácora Incapacidades</strong>
-                        </h6>
-                    </span>
-                </div>
-                <t t-if="disability">
-                    <div class="row">
-                        <div class="col-4 mb4">
-                            <b>
-                                <span style="font-size:12px">Capturada por:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.create_uid"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Fecha de recepción:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_fecha_de_recepcin"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Folio:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_folio"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Inicial:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_inicial"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Subsecuente:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_subsecuente"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Inicia:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_inicia"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Días otorgados:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_das_otorgados"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Observaciones:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_observaciones"/>
-
-
-                        </div>
-                        <div class="col-4 mb4">
-                            <b>
-                                <span style="font-size:12px">Termina:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_termina"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Se reincorpora:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_se_reincorpora"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">EG:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_eg_1"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">PB Riesgo Trabajo:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_pb_riesgo_trabajo_1"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">PB Riesgo Trayecto:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_pb_riesgo_trayecto_1"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Maternidad:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_maternidad_1"/>
-                            <br/>
-
-                            <b>
-                                <span style="font-size:12px">Días acumulados:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_das_acumulados"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Observaciones:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_observaciones_de_seguimiento"/>
-
-
-                        </div>
-                        <div class="col-4 mb4">
-                            <b>
-                                <span style="font-size:12px">UMF expide:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_umf_expide"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">UMF ads:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_umf_ads"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Diagnóstico:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_diagnstico_1"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Región anatómica:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_regin_anatmica_afectada"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">afectada:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="disability.x_studio_regin_anatmica_afectada"/>
-
-                        </div>
-                    </div>
-                </t>
-                <t t-if="not disability">
-                    <span style="font-size:13px">
-                        <b>Sin datos</b>
-                    </span>
-                </t>
-                <br/>
-
-                <div>
-                    <span style="color:#0569af">
-                        <h6>
-                            <strong>VII. ST-7</strong>
-                        </h6>
-                    </span>
-                </div>
-                <t t-if="st">
-                    <div class="row">
-                        <div class="col-6 mb4">
-                            <b>
-                                <span style="font-size:12px">Fecha y hora de accidente:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="st.x_studio_fecha_y_hora_de_accidente"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Fecha de notificación:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="st.x_studio_fecha_de_notificacin"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Descripción del accidente:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="st.x_studio_descripcin_del_accidente"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">PB Riesgo de trabajo:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="st.x_studio_pb_riesgo_de_trabajo"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">PB Riesgo de trayecto:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="st.x_studio_pb_riesgo_de_trayecto"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">ST-7:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="st.x_studio_st_7"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">ST-2:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="st.x_studio_st_2"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Fecha de alta:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="st.x_studio_fecha_de_alta"/>
-
-
-                        </div>
-                        <div class="col-6 mb4">
-                            <b>
-                                <span style="font-size:12px">Calificación:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="st.x_studio_calificacin_1"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Diagnóstico ST-7 emitido por médico del trabajo:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="st.x_studio_diagnstico_st_7"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Diagnóstico emitido por primer médico IMSS:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="st.x_studio_diagnstico_emitido_por_primer_mdico_imss"/>
-                            <br/>
-                            <b>
-                                <span style="font-size:12px">Días de incapacidad total:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="st.x_studio_das_de_incapacidad_total"/>
-                            <br/>
-
-                            <b>
-                                <span style="font-size:12px">Observaciones:</span>
-                            </b>
-                            <span style="font-size:12px" t-field="st.x_studio_observaciones_y_comentarios_2"/>
-                        </div>
-
-                    </div>
-                </t>
-                <t t-if="not st">
-                    <span style="font-size:13px">
-                        <b>Sin datos</b>
-                    </span>
-                </t>
-                <br/>
-
-                <div>
-                    <span style="color:#0569af">
-                        <h6>
-                            <strong>VIII. EXPLORACIÓN FÍSICA</strong>
+                            <strong>V. EXPLORACIÓN FÍSICA</strong>
                         </h6>
                     </span>
                 </div>
@@ -1042,7 +736,1086 @@
                     </div>
 
                 </div>
+                <br/>
+                <p style="page-break-after:always;"></p>
+                <!--Bitácora Consultas -->
+                <div>
+                    <span style="color:#0569af">
+                        <h6>
+                            <strong>VI. Bitácora Consultas</strong>
+                        </h6>
+                    </span>
+                </div>
+                <t t-if="consult">
+                    <t t-foreach="consult" t-as="co">
 
+                        <div class="row">
+                            <div class="col-6 mb4">
+                                <b>
+                                    <span style="font-size:12px">Turno:</span>
+                                </b>
+
+                                <span style="font-size:12px" t-field="co.x_studio_turno_1"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Fecha y hora de ingreso:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="co.x_studio_fecha_y_hora_de_ingreso"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Fecha y hora de salida:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="co.x_studio_fecha_y_hora_de_salida"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Tiempo total en consulta:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="co.x_studio_tiempo_total_en_consulta"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Tipo consulta:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="co.x_studio_tipo_consulta_1"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Cantidad:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="co.x_studio_cantidad"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Personal de salud en turno:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="co.x_studio_personal_de_salud_en_turno_1"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Observaciones:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="co.x_studio_observaciones"/>
+
+                            </div>
+                            <div class="col-6 mb4">
+                                <b>
+                                    <span style="font-size:12px">Clasificación:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="co.x_studio_clasificacin_1"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Relación con el trabajo:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="co.x_studio_relacin_con_el_trabajo"/>
+                                <b>
+                                    <span style="font-size:12px">Listado por aparatos y sistemas:</span>
+                                </b>
+                                <span style="font-size:12px"
+                                      t-field="co.x_studio_listado_por_aparatos_y_sistemas"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Tratamiento:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="co.x_studio_tratamiento"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Diagnóstico:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="co.x_studio_diagnstico"/>
+                            </div>
+                        </div>
+                        <br/>
+                    </t>
+                </t>
+                <t t-if="not consult">
+                    <span style="font-size:13px">
+                        <b>Sin datos</b>
+                    </span>
+                </t>
+                <br/>
+                <!--Bitácora Incapacidades -->
+                <div>
+                    <span style="color:#0569af">
+                        <h6>
+                            <strong>VII. Bitácora Incapacidades</strong>
+                        </h6>
+                    </span>
+                </div>
+                <t t-if="disability">
+                    <t t-foreach="disability" t-as="dis">
+                        <div class="row">
+                            <div class="col-4 mb4">
+                                <b>
+                                    <span style="font-size:12px">Capturada por:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.create_uid"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Fecha de recepción:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.x_studio_fecha_de_recepcin"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Folio:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.x_studio_folio"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Inicial:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.x_studio_inicial"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Subsecuente:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.x_studio_subsecuente"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Inicia:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.x_studio_inicia"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Días otorgados:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.x_studio_das_otorgados"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Observaciones:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.x_studio_observaciones"/>
+
+
+                            </div>
+                            <div class="col-4 mb4">
+                                <b>
+                                    <span style="font-size:12px">Termina:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.x_studio_termina"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Se reincorpora:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.x_studio_se_reincorpora"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">EG:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.x_studio_eg_1"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">PB Riesgo Trabajo:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.x_studio_pb_riesgo_trabajo_1"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">PB Riesgo Trayecto:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.x_studio_pb_riesgo_trayecto_1"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Maternidad:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.x_studio_maternidad_1"/>
+                                <br/>
+
+                                <b>
+                                    <span style="font-size:12px">Días acumulados:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.x_studio_das_acumulados"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Observaciones:</span>
+                                </b>
+                                <span style="font-size:12px"
+                                      t-field="dis.x_studio_observaciones_de_seguimiento"/>
+
+
+                            </div>
+                            <div class="col-4 mb4">
+                                <b>
+                                    <span style="font-size:12px">UMF expide:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.x_studio_umf_expide"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">UMF ads:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.x_studio_umf_ads"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Diagnóstico:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.x_studio_diagnstico_1"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Región anatómica:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.x_studio_regin_anatmica_afectada"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">afectada:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="dis.x_studio_regin_anatmica_afectada"/>
+
+                            </div>
+                        </div>
+                    </t>
+                    <br/>
+                </t>
+                <t t-if="not disability">
+                    <span style="font-size:13px">
+                        <b>Sin datos</b>
+                    </span>
+                </t>
+                <br/>
+
+                <!-- ST-7 -->
+                <div>
+                    <span style="color:#0569af">
+                        <h6>
+                            <strong>VIII. ST-7</strong>
+                        </h6>
+                    </span>
+                </div>
+                <t t-if="st">
+                    <t t-foreach="st" t-as="st_line">
+                        <div class="row">
+                            <div class="col-6 mb4">
+                                <b>
+                                    <span style="font-size:12px">Fecha y hora de accidente:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="st_line.x_studio_fecha_y_hora_de_accidente"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Fecha de notificación:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="st_line.x_studio_fecha_de_notificacin"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Descripción del accidente:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="st_line.x_studio_descripcin_del_accidente"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">PB Riesgo de trabajo:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="st_line.x_studio_pb_riesgo_de_trabajo"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">PB Riesgo de trayecto:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="st_line.x_studio_pb_riesgo_de_trayecto"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">ST-7:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="st_line.x_studio_st_7"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">ST-2:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="st_line.x_studio_st_2"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Fecha de alta:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="st_line.x_studio_fecha_de_alta"/>
+
+
+                            </div>
+                            <div class="col-6 mb4">
+                                <b>
+                                    <span style="font-size:12px">Calificación:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="st_line.x_studio_calificacin_1"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Diagnóstico ST-7 emitido por médico del trabajo:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="st_line.x_studio_diagnstico_st_7"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Diagnóstico emitido por primer médico IMSS:</span>
+                                </b>
+                                <span style="font-size:12px"
+                                      t-field="st_line.x_studio_diagnstico_emitido_por_primer_mdico_imss"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Días de incapacidad total:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="st_line.x_studio_das_de_incapacidad_total"/>
+                                <br/>
+
+                                <b>
+                                    <span style="font-size:12px">Observaciones:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="st_line.x_studio_observaciones_y_comentarios_2"/>
+                            </div>
+                        </div>
+                        <br/>
+                    </t>
+                </t>
+                <t t-if="not st">
+                    <span style="font-size:13px">
+                        <b>Sin datos</b>
+                    </span>
+                </t>
+                <br/>
+
+                <!--CONTROL PRENATAL -->
+                <div>
+                    <span style="color:#0569af">
+                        <h6>
+                            <strong>IX. CONTROL PRENATAL</strong>
+                        </h6>
+                    </span>
+                </div>
+                <t t-if="control">
+                    <t t-foreach="control" t-as="c_line">
+                        <div class="row">
+                            <div class="col-6 mb4">
+                                <b>
+                                    <span style="font-size:12px">Gesta:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="c_line.x_studio_gesta"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Abortos:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="c_line.x_studio_abortos"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Parto:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="c_line.x_studio_parto"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">FUM:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="c_line.x_studio_fum"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">FPP:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="c_line.x_studio_fpp"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Fecha inicio incapacidad por maternidad:</span>
+                                </b>
+                                <span style="font-size:12px"
+                                      t-field="c_line.x_studio_fecha_inicio_incapacidad_por_maternidad"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Fecha termino incapacidad por maternidad:</span>
+                                </b>
+                                <span style="font-size:12px"
+                                      t-field="c_line.x_studio_fecha_termino_incapacidad_por_maternidad"/>
+
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Nombre contacto:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="c_line.x_studio_nombre_contacto"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Parentesco:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="c_line.x_studio_parentesco"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Parentesco:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="c_line.x_studio_parentesco"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Teléfono Contacto:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="c_line.x_studio_telfono_contacto"/>
+                            </div>
+                            <div class="col-6 mb4">
+                                <b>
+                                    <span style="font-size:12px">Fecha inicio lactancia:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="c_line.x_studio_fecha_inicio_lactancia"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Fecha termino lactancia:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="c_line.x_studio_fecha_termino_lactancia"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Sexo del bebé:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="c_line.x_studio_sexo_del_beb"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Para:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="c_line.x_studio_para"/>
+                                <br/>
+
+                                <b>
+                                    <span style="font-size:12px">Cesarea:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="c_line.x_studio_cesarea"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Método de planificación familiar:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="c_line.x_studio_mtodo_de_planificacin_familiar"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">EN CASO DE ACCIDENTE NOTIFICAR A:</span>
+                                </b>
+                                <span style="font-size:12px"
+                                      t-field="c_line.x_studio_en_caso_de_accidente_notificar_a"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Realizará lactancia materna:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="c_line.x_studio_realizar_lactancia_materna"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Tipo de sangre:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="c_line.x_studio_tipo_de_sangre"/>
+                            </div>
+
+                        </div>
+                        <t t-if="c_line.x_studio_one2many_field_KWicy">
+                            <div>
+                                <div>
+                                    <span>
+                                        <strong>Seguimiento:</strong>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <table class="table table-sm o_main_table">
+                                    <thead style="display: table-row-group">
+                                        <tr>
+                                            <th style="font-size:13px" class="text-right">Fecha</th>
+                                            <th style="font-size:13px" class="text-right">SDG</th>
+                                            <th style="font-size:13px" class="text-right">Peso</th>
+                                            <th style="font-size:13px" class="text-right">
+
+                                                <span>Temperatura</span>
+                                            </th>
+                                            <th style="font-size:13px" class="text-right">FC</th>
+                                            <th style="font-size:13px" class="text-right">DxTx</th>
+                                            <th style="font-size:13px" class="text-right">SPO2%</th>
+                                            <th style="font-size:13px" class="text-right">TA</th>
+                                            <th style="font-size:13px" class="text-right">Observaciones</th>
+                                            <th style="font-size:13px" class="text-right">Recomendaciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="sale_tbody">
+                                        <t t-foreach="c_line.x_studio_one2many_field_KWicy" t-as="line">
+                                            <tr>
+                                                <td class="text-right">
+                                                    <span style="font-size:12px" t-field="line.x_studio_fecha"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span style="font-size:12px" t-field="line.x_studio_sdg"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span style="font-size:12px" t-field="line.x_studio_peso"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span style="font-size:12px" t-field="line.x_studio_temperatura"/>
+                                                </td>
+
+                                                <td class="text-right">
+                                                    <span style="font-size:12px" t-field="line.x_studio_fc"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span style="font-size:12px" t-field="line.x_studio_dxtx"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span style="font-size:12px" t-field="line.x_studio_spo2"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span style="font-size:12px" t-field="line.x_studio_ta"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span style="font-size:12px" t-field="line.x_studio_observaciones"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span style="font-size:12px"
+                                                          t-field="line.x_studio_recomendaciones"/>
+                                                </td>
+
+                                            </tr>
+
+                                        </t>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </t>
+                        <br/>
+                    </t>
+                </t>
+                <t t-if="not control">
+                    <span style="font-size:13px">
+                        <b>Sin datos</b>
+                    </span>
+                </t>
+                <br/>
+
+
+                <!--  EMP -->
+                <div>
+                    <span style="color:#0569af">
+                        <h6>
+                            <strong>X. EMP</strong>
+                        </h6>
+                    </span>
+                </div>
+
+
+                <t t-if="emp">
+                    <t t-foreach="emp" t-as="emp_line">
+                        <div class="row">
+                            <div class="col-6 mb4">
+                                <b>
+                                    <span style="font-size:12px">Categoría:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_categora"/>
+                            </div>
+                            <div class="col-6 mb4">
+                                <b>
+                                    <span style="font-size:12px">Año de realización del EMP:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_ao_de_realizacin_del_emp_1"/>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <span>
+                                    <strong>Examenes a realizar:</strong>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 mb4">
+                                <b>
+                                    <span style="font-size:12px">Enfermería:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_enfermera"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Consultorio:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_consultorio"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Audiometría:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_audiometra"/>
+
+                                <br/>
+                                <t t-if="emp_line.x_studio_audiometra">
+                                    <b>
+                                        <span style="font-size:12px">Resultados audiometría:</span>
+                                    </b>
+
+                                    <span style="font-size:12px" t-field="emp_line.x_studio_resultados_audiometra"/>
+                                    <br/>
+                                </t>
+                                <b>
+                                    <span style="font-size:12px">Espirometría:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_espirometra"/>
+                                <br/>
+                                <t t-if="emp_line.x_studio_espirometra">
+                                    <b>
+                                        <span style="font-size:12px">Resultados Espirometría:</span>
+                                    </b>
+
+                                    <span style="font-size:12px" t-field="emp_line.x_studio_resultados_espirometra"/>
+                                    <br/>
+                                </t>
+                                <b>
+                                    <span style="font-size:12px">Radiografía columna lumbar:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_radiografa_columna_lumbar_1"/>
+                                <br/>
+                                <t t-if="emp_line.x_studio_radiografa_columna_lumbar_1">
+                                    <b>
+                                        <span style="font-size:12px">Resultados RCL:</span>
+                                    </b>
+
+                                    <span style="font-size:12px" t-field="emp_line.	x_studio_resultados_rcl"/>
+                                    <br/>
+
+                                </t>
+                                <b>
+                                    <span style="font-size:12px">Electrocardiograma:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_electrocardiograma"/>
+                                <br/>
+
+                                <t t-if="emp_line.x_studio_electrocardiograma">
+                                    <b>
+                                        <span style="font-size:12px">Resultado Electro:</span>
+                                    </b>
+
+                                    <span style="font-size:12px" t-field="emp_line.x_studio_resultado_electro"/>
+                                    <br/>
+                                </t>
+                                <b>
+                                    <span style="font-size:12px">VDRL:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_vdrl"/>
+                                <t t-if="emp_line.x_studio_vdrl">
+                                    <b>
+                                        <span style="font-size:12px">Resultado VDRL:</span>
+                                    </b>
+
+                                    <span style="font-size:12px" t-field="emp_line.x_studio_resultado_vdrl"/>
+
+                                </t>
+
+                            </div>
+                            <div class="col-4 mb4">
+                                <b>
+                                    <span style="font-size:12px">Grupo y RH:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_grupo_y_rh"/>
+                                <br/>
+                                <t t-if="emp_line.x_studio_grupo_y_rh">
+                                    <b>
+                                        <span style="font-size:12px">Resultado Grupo RH:</span>
+                                    </b>
+
+                                    <span style="font-size:12px" t-field="emp_line.x_studio_resultado_grupo_rh"/>
+                                    <br/>
+
+                                </t>
+                                <b>
+                                    <span style="font-size:12px">Glucosa:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_glucosa_1"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Colesterol:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_colesterol_1"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Trigliceridos:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_trigliceridos_1"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">PIE:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_pie"/>
+                                <br/>
+                                <t t-if="emp_line.x_studio_pie">
+                                    <b>
+                                        <span style="font-size:12px">Resultado PIE:</span>
+                                    </b>
+
+                                    <span style="font-size:12px" t-field="emp_line.x_studio_resultado_pie"/>
+                                    <br/>
+
+                                </t>
+                            </div>
+                            <div class="col-4 mb4">
+                                <b>
+                                    <span style="font-size:12px">Antidoping:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_laboratorio"/>
+                                <br/>
+                                <t t-if="emp_line.x_studio_laboratorio">
+                                    <b>
+                                        <span style="font-size:12px">Resultado antidoping:</span>
+                                    </b>
+
+                                    <span style="font-size:12px" t-field="emp_line.x_studio_resultado_antidoping_1"/>
+                                    <br/>
+
+                                </t>
+                                <b>
+                                    <span style="font-size:12px">Biometría hemática:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_biometra_hemtica"/>
+                                <br/>
+                                <t t-if="emp_line.x_studio_biometra_hemtica">
+                                    <b>
+                                        <span style="font-size:12px">Resultado BH:</span>
+                                    </b>
+
+                                    <span style="font-size:12px" t-field="emp_line.x_studio_resultado_bh"/>
+                                    <br/>
+                                </t>
+                                <b>
+                                    <span style="font-size:12px">Química sanguinea:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_qumica_sanguinea"/>
+                                <br/>
+                                <t t-if="emp_line.x_studio_qumica_sanguinea">
+                                    <b>
+                                        <span style="font-size:12px">Resultado QS:</span>
+                                    </b>
+
+                                    <span style="font-size:12px" t-field="emp_line.x_studio_resultado_qs"/>
+                                    <br/>
+
+                                </t>
+                                <b>
+                                    <span style="font-size:12px">Prueba Antigenos SARS-COV2:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_prueba_antigenos_sars_cov2"/>
+                                <br/>
+                                <t t-if="emp_line.x_studio_prueba_antigenos_sars_cov2">
+                                    <b>
+                                        <span style="font-size:12px">Resultado Antígenos:</span>
+                                    </b>
+
+                                    <span style="font-size:12px" t-field="emp_line.x_studio_resultado_antgenos"/>
+                                    <br/>
+
+                                </t>
+                                <b>
+                                    <span style="font-size:12px">VIH:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_vih"/>
+                                <t t-if="emp_line.x_studio_vih">
+                                    <b>
+                                        <span style="font-size:12px">Resultado VIH:</span>
+                                    </b>
+
+                                    <span style="font-size:12px" t-field="emp_line.x_studio_resultado_vih"/>
+                                    <br/>
+
+                                </t>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <span>
+                                    <strong>Historia Clínica:</strong>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 mb4">
+                                <b>
+                                    <span style="font-size:12px">Antecedentes heredo familiares:</span>
+                                </b>
+                                <span style="font-size:12px"
+                                      t-field="emp_line.x_studio_antecedentes_heredo_familiares"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Antecedentes NO patológicos:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_antecedentes_no_patolgicos"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Antecedentes patológicos:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_antecedentes_patolgicos"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">EXPLORACIÓN FÍSICA:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_exploracin_fsica"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">SIGNOS VITALES:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_signos_vitales"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Tensión arterial:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_tensin_arterial"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Frecuencia cardiaca:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_frecuencia_cardiaca"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Frecuencia respiratoria:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_frecuencia_respiratoria"/>
+
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Temperatura:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_temperatura"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">AGUDEZA VISUAL:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_agudeza_visual"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">OD:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_od"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">OI:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_oi"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">ANTROPOMETRÍA:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_antropometra_1"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Talla:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_talla_1"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Peso:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_peso_1"/>
+
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Observaciones:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_observaciones"/>
+
+                            </div>
+                            <div class="col-6 mb4">
+                                <b>
+                                    <span style="font-size:12px">INTERROGATORIO POR SISTEMAS Y APARATOS:</span>
+                                </b>
+                                <span style="font-size:12px"
+                                      t-field="emp_line.x_studio_interrogatorio_por_sistemas_y_aparatos"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Cabeza y cuello:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_cabeza_y_cuello"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Vista:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_vista"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Boca:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_boca"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Torax:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_torax"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Extremidades superiores:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_extremidades_superiores"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Extremidades inferiores:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_extremidades_inferiores"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Abdomen:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_abdomen"/>
+
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Musculoesquelético:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_musculoesqueltico"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Digestivo:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_digestivo"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Genitourinario:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_genitourinario"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Impresión diagnóstica:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_impresin_diagnstica"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">IMC:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_imc_2"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Médico:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_mdico"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Cédula profesional:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_cdula_profesional"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">SSA:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_ssa"/>
+
+                            </div>
+                        </div>
+                        <br/>
+                    </t>
+                </t>
+
+                <t t-if="not emp">
+                    <span style="font-size:13px">
+                        <b>Sin datos</b>
+                    </span>
+                </t>
+                <br/>
+
+                <!-- Cronicos-->
+                <div>
+                    <span style="color:#0569af">
+                        <h6>
+                            <strong>XI. Crónicos</strong>
+                        </h6>
+                    </span>
+                </div>
+                <t t-if="cron">
+                    <t t-foreach="cron" t-as="cron_line">
+                        <div class="row">
+                            <div class="col-6 mb4">
+                                <b>
+                                    <span style="font-size:12px">Recomendaciones:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="cron_line.x_studio_recomendaciones"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Diagnóstico:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="cron_line.x_studio_diagnstico"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Cita:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="cron_line.x_studio_cita"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Acudió a cita:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="cron_line.x_studio_acudi_a_cita"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Control:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="cron_line.x_studio_control"/>
+                            </div>
+                            <div class="col-6 mb4">
+                                <b>
+                                    <span style="font-size:12px">Esquema de vacunación COVID completo:</span>
+                                </b>
+                                <span style="font-size:12px"
+                                      t-field="cron_line.x_studio_esquema_de_vacunacin_covid_completo"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Actualmente en planta:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="cron_line.x_studio_actualmente_en_planta"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Salida de planta el día:</span>
+                                </b>
+                                <span style="font-size:12px" t-field="cron_line.x_studio_salida_de_planta_el_da"/>
+                                <br/>
+                                <b>
+                                    <span style="font-size:12px">Reingreso de planta :</span>
+                                </b>
+                                <span style="font-size:12px" t-field="cron_line.x_studio_reingreso_de_planta"/>
+                            </div>
+                        </div>
+                        <t t-if="cron_line.x_studio_one2many_field_QlHlH">
+                            <div>
+                                <div>
+                                    <span>
+                                        <strong>Seguimiento:</strong>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <table class="table table-sm o_main_table">
+                                    <thead style="display: table-row-group">
+                                        <tr>
+                                            <th style="font-size:13px" class="text-right">Fecha</th>
+                                            <th style="font-size:13px" class="text-right">DxTx</th>
+                                            <th style="font-size:13px" class="text-right">TA</th>
+                                            <th style="font-size:13px" class="text-right">
+
+                                                <span>Colesterol</span>
+                                            </th>
+                                            <th style="font-size:13px" class="text-right">Triglicéridos</th>
+                                            <th style="font-size:13px" class="text-right">Hemoglobina glucosilada</th>
+                                            <th style="font-size:13px" class="text-right">Peso</th>
+                                            <th style="font-size:13px" class="text-right">Talla</th>
+                                            <th style="font-size:13px" class="text-right">Creado Por</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="sale_tbody">
+                                        <t t-foreach="cron_line.x_studio_one2many_field_QlHlH" t-as="line">
+                                            <tr>
+                                                <td class="text-right">
+                                                    <span style="font-size:12px" t-field="line.x_studio_fecha"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span style="font-size:12px" t-field="line.x_studio_dxtx"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span style="font-size:12px" t-field="line.x_studio_ta"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span style="font-size:12px" t-field="line.x_studio_colesterol"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span style="font-size:12px" t-field="line.x_studio_triglicridos"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span style="font-size:12px"
+                                                          t-field="line.x_studio_hemoglobina_glucosilada"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span style="font-size:12px" t-field="line.x_studio_peso"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span style="font-size:12px" t-field="line.x_studio_talla"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <span style="font-size:12px" t-field="line.create_uid"/>
+                                                </td>
+                                            </tr>
+
+                                        </t>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </t>
+                        <br/>
+                    </t>
+                </t>
+                <t t-if="not cron">
+                    <span style="font-size:13px">
+                        <b>Sin datos</b>
+                    </span>
+                </t>
+              
+                <p style="page-break-after:always;"></p>
                 <p style="font-size:11px">La información descrita en esta Historia Clínica Laboral fue proporcionada por
                     mi persona, no omito ningún dato de lesión o enfermedad pasada o presente. Estoy de
                     acuerdo con los datos anotados por el médico resultado de la exploración física que se me realizó.
