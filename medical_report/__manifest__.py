@@ -5,7 +5,7 @@
     'description': "Medical Report",
     'depends': ['base'],
     'data': [
-       # 'views/examen_medico_report.xml',
+       'views/examen_medico_report.xml',
          #'views/report.xml',
        ],
     'qweb': [
