@@ -35,14 +35,14 @@
 			<field name="target">new</field>
 		</record>
 
-<!--		<act_window-->
-<!--				id="pop_up"-->
-<!--				name="Actualizar Estado Pedido"-->
-<!--				res_model="sale.order.popup"-->
-<!--				binding_model="sale.order"-->
-<!--				view_id="view_pop_up_wizard_form"-->
-<!--				target="new"-->
-<!--		/>-->
+		<act_window
+				id="pop_up"
+				name="Actualizar Estado Pedido"
+				res_model="sale.order.popup"
+				binding_model="sale.order"
+				view_id="view_pop_up_wizard_form"
+				target="new"
+		/>
 
 	</data>
 </odoo>
