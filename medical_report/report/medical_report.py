@@ -20,7 +20,6 @@ class ReportMedical(models.AbstractModel):
         cron = False
         for doc in docs:
             consult = self.env['x_bitacora_consultas'].search([('x_studio_many2one_field_8sTvT','=',doc.x_studio_many2one_field_r1IDF.id)])
-            print ("---------------------------------------",consult ,  doc)
             disability = self.env['x_bitacora_incapacidad'].search(
                 [('x_studio_nombre', '=', doc.x_studio_many2one_field_r1IDF.id)])
             st_7 = self.env['x_st_7'].search(
@@ -31,7 +30,6 @@ class ReportMedical(models.AbstractModel):
                 [('x_studio_nombre', '=', doc.x_studio_many2one_field_r1IDF.id)])
             cron = self.env['x_cronicos'].search(
                 [('x_studio_nombre', '=', doc.x_studio_many2one_field_r1IDF.id)])
-            print("-------------cronnnnnnnnnnn-----", cron, doc)
         return {
             'doc_ids': docs.ids,
             'doc_model': 'x_emi',
