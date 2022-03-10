@@ -1424,9 +1424,9 @@
                                 <b>
                                     <span style="font-size:12px">Antidoping:</span>
                                 </b>
-                                <span style="font-size:12px" t-field="emp_line.x_studio_laboratorio"/>
+                                <span style="font-size:12px" t-field="emp_line.x_studio_antidoping"/>
                                 <br/>
-                                <t t-if="emp_line.x_studio_laboratorio">
+                                <t t-if="emp_line.x_studio_antidoping">
                                     <b>
                                         <span style="font-size:12px">Resultado antidoping:</span>
                                     </b>
