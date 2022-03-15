@@ -1343,7 +1343,7 @@
                                         <span style="font-size:12px">Resultados RCL:</span>
                                     </b>
 
-                                    <span style="font-size:12px" t-field="emp_line.	x_studio_resultados_rcl"/>
+                                    <span style="font-size:12px" t-field="emp_line.x_studio_resultados_rcl"/>
                                     <br/>
 
                                 </t>
