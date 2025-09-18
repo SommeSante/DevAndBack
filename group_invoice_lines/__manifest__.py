@@ -10,12 +10,12 @@
     'website': "https://sommesante.com",
     'category': 'Accounting/Accounting',
     'version': '18.0.1.0.0',
-    'depends': ['account'],   # no necesitas 'base', viene implícito
+    'depends': ['account_accountant', 'web_enterprise'],
+
     'data': [
         'views/report_invoice.xml',
     ],
-    'demo': [],
     'installable': True,
     'application': False,
-    'license': 'LGPL-3',
+    'license': 'OEEL-1',
 }
