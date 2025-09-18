@@ -6,8 +6,8 @@
         Este módulo agrega un asistente (popup) en los pedidos de venta
         que permite actualizar el estado y registrar el número de factura.
     """,
-    'author': "Tu Empresa",
-    'website': "https://www.tuempresa.com",
+    'author': "Somme Sante TI",
+    'website': "https://sommesante.com",
     'category': 'Sales/Sales',
     'version': '18.0.1.0.0',
     'depends': ['sale'],
