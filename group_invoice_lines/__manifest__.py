@@ -1,34 +1,21 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "group_invoice_lines",
-
-    'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
-
+    'name': "Group Invoice Lines",
+    'summary': "Agrupa líneas de factura en el reporte PDF",
     'description': """
-        Long description of module's purpose
+        Este módulo personaliza el reporte de facturas
+        para agrupar líneas según ciertos criterios.
     """,
-
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
-
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/14.0/odoo/addons/base/data/ir_module_category_data.xml
-    # for the full list
-    'category': 'Uncategorized',
-    'version': '0.1',
-
-    # any module necessary for this one to work correctly
-    'depends': ['base', 'account'],
-
-    # always loaded
+    'author': "Tu Empresa",
+    'website': "https://www.tuempresa.com",
+    'category': 'Accounting/Accounting',
+    'version': '18.0.1.0.0',
+    'depends': ['account'],   # no necesitas 'base', viene implícito
     'data': [
-        # 'security/ir.model.access.csv',
         'views/report_invoice.xml',
     ],
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
+    'demo': [],
+    'installable': True,
+    'application': False,
+    'license': 'LGPL-3',
 }
