@@ -6,8 +6,8 @@
         Este módulo personaliza el reporte de facturas
         para agrupar líneas según ciertos criterios.
     """,
-    'author': "Tu Empresa",
-    'website': "https://www.tuempresa.com",
+    'author': "Somme Sante TI",
+    'website': "https://sommesante.com",
     'category': 'Accounting/Accounting',
     'version': '18.0.1.0.0',
     'depends': ['account'],   # no necesitas 'base', viene implícito
