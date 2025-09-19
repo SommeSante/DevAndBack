@@ -8,7 +8,7 @@
     """,
     'author': "Somme Sante TI",
     'website': "https://sommesante.com",
-    'category': 'Sales/Sales',
+    'category': 'Sales',
     'version': '18.0.1.0.0',
     'depends': ['sale'],
     'data': [
@@ -18,5 +18,5 @@
     'demo': [],
     'installable': True,
     'application': False,
-    'license': 'OEEL-1',
+    'license': 'LGPL-3',
 }
