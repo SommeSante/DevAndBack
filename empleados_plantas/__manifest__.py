@@ -1,32 +1,23 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "empleados_plantas",
-
-    'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
-
+    'name': "Empleados por Planta",
+    'summary': "Gestión de empleados asignados a distintas plantas",
     'description': """
-        Long description of module's purpose
+        Este módulo permite administrar y relacionar empleados
+        con las plantas de la empresa, agregando vistas y accesos
+        personalizados sobre pedidos de venta.
     """,
-
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
-
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/14.0/odoo/addons/base/data/ir_module_category_data.xml
-    # for the full list
-    'category': 'Uncategorized',
-    'version': '0.1',
-
-    # any module necessary for this one to work correctly
+    'author': "Somme Sante TI",
+    'website': "https://sommesante.com",
+    'category': 'Human Resources',
+    'version': '18.0.1.0.0',
     'depends': ['base', 'sale'],
-
-    # always loaded
     'data': [
         'security/ir.model.access.csv',
         'views/sale_pop_up_view.xml',
     ],
-    # only loaded in demonstration mode
-    # 'demo': [],
+    'demo': [],
+    'installable': True,
+    'application': True,
+    'license': 'LGPL-3',
 }

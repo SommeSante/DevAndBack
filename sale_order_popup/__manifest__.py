@@ -1,32 +1,22 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "sale_order_popup",
-
-    'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
-
+    'name': "Sale Order Popup Wizard",
+    'summary': "Wizard para actualizar pedidos de venta con número de factura",
     'description': """
-        Long description of module's purpose
+        Este módulo agrega un asistente (popup) en los pedidos de venta
+        que permite actualizar el estado y registrar el número de factura.
     """,
-
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
-
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/14.0/odoo/addons/base/data/ir_module_category_data.xml
-    # for the full list
-    'category': 'Uncategorized',
-    'version': '0.1',
-
-    # any module necessary for this one to work correctly
-    'depends': ['base', 'sale'],
-
-    # always loaded
+    'author': "Somme Sante TI",
+    'website': "https://sommesante.com",
+    'category': 'Sales',
+    'version': '18.0.1.0.0',
+    'depends': ['sale'],
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/sale_pop_up_view.xml',
     ],
-    # only loaded in demonstration mode
-    # 'demo': [],
+    'demo': [],
+    'installable': True,
+    'application': False,
+    'license': 'LGPL-3',
 }

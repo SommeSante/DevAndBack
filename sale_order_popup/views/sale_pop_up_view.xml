@@ -28,21 +28,17 @@
 		</record>
 
 		<record id="pop_up_action" model="ir.actions.act_window">
-			<field name="name">Actualizar Estado Pedido</field>
-			<field name="type">ir.actions.act_window</field>
-			<field name="res_model">sale.order.popup</field>
-			<field name="view_mode">form</field>
-			<field name="target">new</field>
+		    <field name="name">Actualizar Estado Pedido</field>
+		    <field name="res_model">sale.order.popup</field>
+		    <field name="view_mode">form</field>
+		    <field name="view_id" ref="view_pop_up_wizard_form"/>
+		    <field name="target">new</field>
+		    <!-- Enlazar como acción contextual del modelo Sale Order -->
+		    <field name="binding_model_id" ref="sale.model_sale_order"/>
+		    <!-- Dónde aparece el botón contextual: lista y formulario -->
+		    <field name="binding_view_types">list,form</field>
 		</record>
 
-		<act_window
-				id="pop_up"
-				name="Actualizar Estado Pedido"
-				res_model="sale.order.popup"
-				binding_model="sale.order"
-				view_id="view_pop_up_wizard_form"
-				target="new"
-		/>
 
 	</data>
 </odoo>
