@@ -15,13 +15,9 @@
 						<field name="invoice_number"/>
 					</group>
 					<footer>
-						<button class="oe_highlight"
-						        type="object"
-						        name="update_sale_order"
-						        string="Actualizar Pedidos"
-						/>
-						or
-						<button string="Cancel" class="oe_link" special="cancel"/>
+						<button class="oe_highlight" type="object" name="update_sale_order" string="Actualizar Pedidos"/>
+						<span class="oe_inline">o</span>
+						<button string="Cancelar" class="oe_link" special="cancel"/>
 					</footer>
 				</form>
 			</field>
