@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "sale_order_popup",
+    'name': "empleados_plantas",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -24,7 +24,7 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/sale_pop_up_view.xml',
     ],
     # only loaded in demonstration mode
