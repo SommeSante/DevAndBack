@@ -1,1 +1,1 @@
-# DevAndBack
+# DevAndBack Odoo 18
